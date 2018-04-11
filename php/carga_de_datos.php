@@ -19,8 +19,8 @@
     }
 
     Class Llave{
-        public $equipo1
-        public $equipo2
+        public $equipo1;
+        public $equipo2;
 
         function __construct($equipo1, $equipo2){
             $this->equipo1 = $equipo1;
