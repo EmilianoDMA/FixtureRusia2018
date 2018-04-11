@@ -19,7 +19,7 @@
     }
 
     Class FaseGrupos{
-        public $grupos
+        public $grupos;
 
         function __construct($grupos){
             $this->grupos = $grupos;
@@ -91,11 +91,6 @@
     $japon = new Equipo('Japón');
 
     $grupoH = new Grupo('H', array($polonia, $senegal, $colombia, $japon));
-    
-
-
-
-
 
     $faseDeGrupos = new FaseGrupos(array($grupoA, $grupoB, $grupoC, $grupoD, $grupoE, $grupoF, $grupoG, $grupoH));
 
