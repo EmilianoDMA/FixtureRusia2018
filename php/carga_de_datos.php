@@ -2,9 +2,11 @@
 
     Class Equipo{
         public $nombre;
+        public $bandera;
         
-        function __construct($nombre){
+        function __construct($nombre, $bandera){
             $this->nombre = $nombre;
+            $this->bandera = $bandera;
         }
     }
 
@@ -37,59 +39,59 @@
         }
     }
 
-    $rusia = new Equipo('Rusia');
-    $arabiaSaudita = new Equipo('Arabia Saudita');
-    $egipto = new Equipo('Egipto');
-    $uruguay = new Equipo('Uruguay');
+    $rusia = new Equipo('Rusia', 'Rusia');
+    $arabiaSaudita = new Equipo('Arabia Saudita', 'ArabiaSaudita');
+    $egipto = new Equipo('Egipto', 'Egipto');
+    $uruguay = new Equipo('Uruguay', 'Uruguay');
 
     $grupoA = new Grupo('A', array($rusia, $arabiaSaudita, $egipto, $uruguay));
 
-    $portugal = new Equipo('Portugal');
-    $espania = new Equipo('España');
-    $marruecos = new Equipo('Marruecos');
-    $iran = new Equipo('Irán');
+    $portugal = new Equipo('Portugal', 'Portugal');
+    $espania = new Equipo('España', 'España');
+    $marruecos = new Equipo('Marruecos', 'Marruecos');
+    $iran = new Equipo('Irán', 'Iran');
 
     $grupoB = new Grupo('B', array($portugal, $espania, $marruecos, $iran));
 
-    $francia = new Equipo('Francia');
-    $austrailia = new Equipo('Australia');
-    $peru = new Equipo('Perú');
-    $dinamarca = new Equipo('Dinamarca');
+    $francia = new Equipo('Francia', 'Francia');
+    $austrailia = new Equipo('Australia', 'Australia');
+    $peru = new Equipo('Perú', 'Peru');
+    $dinamarca = new Equipo('Dinamarca', 'Dinamarca');
 
-    $grupoC = new Grupo('C', array($francia, $austrailia, $peru, $peru));
+    $grupoC = new Grupo('C', array($francia, $austrailia, $peru, $dinamarca));
 
-    $argentina = new Equipo('Argentina');
-    $islandia = new Equipo('Islandia');
-    $croacia = new Equipo('Croacia');
-    $nigeria = new Equipo('Nigeria');
+    $argentina = new Equipo('Argentina', 'Argentina');
+    $islandia = new Equipo('Islandia', 'Islandia');
+    $croacia = new Equipo('Croacia', 'Croacia');
+    $nigeria = new Equipo('Nigeria', 'Nigeria');
 
     $grupoD = new Grupo('D', array($argentina, $islandia, $croacia, $nigeria));
 
-    $brasil = new Equipo('Brasil');
-    $suiza = new Equipo('Suiza');
-    $costa_rica = new Equipo('Costa Rica');
-    $serbia = new Equipo('Serbia');
+    $brasil = new Equipo('Brasil', 'Brasil');
+    $suiza = new Equipo('Suiza', 'Suiza');
+    $costa_rica = new Equipo('Costa Rica', 'CostaRica');
+    $serbia = new Equipo('Serbia', 'Serbia');
 
     $grupoE = new Grupo('E', array($brasil, $suiza, $costa_rica, $serbia));
 
-    $alemania = new Equipo('Alemania');
-    $mexico = new Equipo('México');
-    $suecia = new Equipo('Suecia');
-    $corea_del_sur = new Equipo('Corea del Sur');
+    $alemania = new Equipo('Alemania', 'Alemania');
+    $mexico = new Equipo('México', 'Mexico');
+    $suecia = new Equipo('Suecia', 'Suecia');
+    $corea_del_sur = new Equipo('Corea del Sur', 'CoreaDelSur');
 
     $grupoF = new Grupo('F', array($alemania, $mexico, $suecia, $corea_del_sur));
 
-    $belgica = new Equipo('Bélgica');
-    $panama = new Equipo('Panamá');
-    $tunez = new Equipo('Túnez');
-    $inglaterra = new Equipo('Inglaterra');
+    $belgica = new Equipo('Bélgica', 'Belgica');
+    $panama = new Equipo('Panamá', 'Panama');
+    $tunez = new Equipo('Túnez', 'Tunez');
+    $inglaterra = new Equipo('Inglaterra', 'Inglaterra');
 
     $grupoG = new Grupo('G', array($belgica, $panama, $tunez, $inglaterra));
 
-    $polonia = new Equipo('Polonia');
-    $senegal = new Equipo('Senegal');
-    $colombia = new Equipo('Colombia');
-    $japon = new Equipo('Japón');
+    $polonia = new Equipo('Polonia', 'Polonia');
+    $senegal = new Equipo('Senegal', 'Senegal');
+    $colombia = new Equipo('Colombia', 'Colombia');
+    $japon = new Equipo('Japón', 'Japon');
 
     $grupoH = new Grupo('H', array($polonia, $senegal, $colombia, $japon));
 

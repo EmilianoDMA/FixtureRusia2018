@@ -6,7 +6,7 @@
         <table style="width:100%">
             ${data.equipos.map(e => `<tr><td style="border-top-color: transparent;"
             onmouseover="mOver(this)" onmouseout="mOut(this)">
-            <img src="../static/img/banderas/${e.nombre}.png" height="22" width="22">
+            <img src="../static/img/banderas/${e.bandera}.png" height="22" width="22">
             <strong>${e.nombre}</strong></td></tr>`).join("")}
         </table>
         </div>`;
