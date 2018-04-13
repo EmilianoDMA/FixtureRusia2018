@@ -9,6 +9,7 @@
     }
 
     Class Grupo{
+        public $cont_ganadores = 1;
         public $letra;
         public $equipos;
 

@@ -5,13 +5,21 @@ var app = (function(scope = {}) {
         return null;
     }
 
+    var td;
     var run = (datos) => {
         //fixture = fixtureFactory(datos);
         datos.grupos.forEach(g => {
             var grupo = app.templates.grupoTemplate(g);
             var $grupo = $(grupo);
-            $("tr", $grupo).click(function() {
-                console.log("click en grupo", g.letra);
+            $("td", $grupo).click(function() {
+                console.log("click en grupo", g.letra, g.cont_ganadores);
+                console.log($(this));
+                if (g.cont_ganadores <= 2){
+                    $(this).attr("style", "background-color: #f42242");
+                    $(this).attr("id", "seleccionado");
+                    $(this).html(g.cont_ganadores + $(this).html());
+                    g.cont_ganadores = g.cont_ganadores + 1;
+                }
             });
             $grupo.appendTo($("#grupos"));
         });

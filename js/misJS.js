@@ -10,6 +10,7 @@ function mOut(obj) {
     } 
 }
 
+/*
 var ganadores = 1;
 function myFunction(obj) {
 	
@@ -20,4 +21,4 @@ function myFunction(obj) {
     	ganadores += ganadores;
 	}
 }
- 
+ */
