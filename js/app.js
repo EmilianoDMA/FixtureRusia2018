@@ -20,6 +20,8 @@ var app = (function(scope = {}) {
                     $(this).attr("id", "seleccionado");
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
                     $(this).html(g.cont_ganadores + $(this).html());
+                    var bandera = "../static/img/banderas/Rusia.png";
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\")");
                     g.cont_ganadores = g.cont_ganadores + 1;
                 }
             });
