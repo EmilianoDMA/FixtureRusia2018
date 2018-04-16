@@ -23,12 +23,13 @@ th, td {
 .octavosI {
     background-color: rgba(255, 255, 255, 0.8);    
     border: 1px solid rgba(0, 0, 0, 0.8);   
-    background-blend-mode: color-burn;
+    /*background-blend-mode: color-burn;*/
     padding: 20px;
     text-align: center;
     grid-column: 1;
     min-width: 100px;
     max-width: 150px;
+    min-width: 80px;
 }
 .cuartosI1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -98,7 +99,7 @@ th, td {
 .octavosD {
     background-color: rgba(255, 255, 255, 0.8);    
     border: 1px solid rgba(0, 0, 0, 0.8);   
-    background-blend-mode: color-burn;
+    /*background-blend-mode: color-burn;*/
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;

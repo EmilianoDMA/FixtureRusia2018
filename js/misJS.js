@@ -6,9 +6,10 @@ function mOver(obj) {
 
 
 function mOverBackground(obj) {
-	estilo = $(obj).attr('style');
-	console.log(estilo);
-	$(obj).attr('style', estilo + "background-blend-mode: unset; ");
+	if (obj.id != "seleccionado") {
+		estilo = $(obj).attr('style');
+		$(obj).attr('style', estilo + "background-blend-mode: unset; ");
+	}	
 }
 
 function mOut(obj) {
@@ -17,20 +18,29 @@ function mOut(obj) {
     } 
 }
 
-
 function mOutBackground(obj) {
-	estilo = $(obj).attr('style');
-	$(obj).attr('style', estilo + "background-blend-mode: color-burn; ");
+	if (obj.id != "seleccionado") {
+		estilo = $(obj).attr('style');
+		$(obj).attr('style', estilo + "background-blend-mode: color-burn; ");
+	}
 }
 
 var div;
 function select(obj) {
 	div = obj;
+	obj.id = "seleccionado";
 	var numero = $(obj).attr('data-next');
 	console.log($(obj).html());
 	$('[data-cuar='+numero+']').html($(obj).html())
 }
 
+function select1(obj) {
+	div = obj;
+	obj.id = "seleccionado";
+	var numero = $(obj).attr('data-next');
+	console.log($(obj).html());
+	$('[data-semi='+numero+']').html($(obj).html())
+}
 
 
 
