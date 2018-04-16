@@ -14,14 +14,16 @@ var app = (function(scope = {}) {
             $("td", $grupo).click(function() {
                 console.log("click en grupo", g.letra, g.cont_ganadores);
                 console.log($(this));
-                var nombre;
-                if (g.cont_ganadores <= 2){
+                if ((g.cont_ganadores <= 2) && ($(this).attr('id') != 'seleccionado')){
                     $(this).attr("style", "background-color: #f42242");
                     $(this).attr("id", "seleccionado");
+                    //console.log($(this).attr('id'));
+                    var nombre = $(this).text();
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
-                    $(this).html(g.cont_ganadores + $(this).html());
-                    var bandera = "../static/img/banderas/Rusia.png";
-                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\")");
+                    $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());
+                    var bandera = "../static/img/banderas/" + $(this).attr('abbr') +".png";
+                    //console.log(bandera);
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); background-position: calc(100% - 10px) center; background-size: 100%;");
                     g.cont_ganadores = g.cont_ganadores + 1;
                 }
             });

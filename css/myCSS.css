@@ -227,7 +227,7 @@ th, td {
     min-width: 50;
 }
 .finaltxt {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
     padding: 20px;
     font-size: 10px;
     text-align: center;
