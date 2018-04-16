@@ -16,12 +16,12 @@ th, td {
     align-content: center;    
 }
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     font-size: 14px;
     padding: 10px;
 }
 .octavosI {
+    background-color: rgba(255, 255, 255, 0.8);    
     border: 1px solid rgba(0, 0, 0, 0.8);   
     background-blend-mode: color-burn;
     padding: 20px;
@@ -29,7 +29,6 @@ th, td {
     grid-column: 1;
     min-width: 100px;
     max-width: 150px;
-
 }
 .cuartosI1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -97,6 +96,9 @@ th, td {
 
 }
 .octavosD {
+    background-color: rgba(255, 255, 255, 0.8);    
+    border: 1px solid rgba(0, 0, 0, 0.8);   
+    background-blend-mode: color-burn;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
