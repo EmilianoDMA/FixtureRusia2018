@@ -14,7 +14,6 @@ th, td {
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
   align-content: center;    
-  padding: 10px;
 }
 .grid-container > div {
   text-align: center;
@@ -22,13 +21,14 @@ th, td {
   padding: 10px;
 }
 .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);   
     font-size: 10px;
     text-align: center;
+    min-width: 100px;
 }
 .octavosI {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);   
+    min-width: 100px;
     padding: 20px;
     font-size: 10px;
     text-align: center;
@@ -38,7 +38,7 @@ th, td {
 .cuartosI1 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    min-width: 100px;
     font-size: 10px;
     text-align: center;
     grid-row-start: 1;
@@ -47,6 +47,7 @@ th, td {
 }
 .cuartosI2 {
   background-color: rgba(255, 255, 255, 0.8);
+  min-width: 100px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   text-align: center;
   padding: 20px 0;
@@ -64,6 +65,7 @@ th, td {
   grid-column: 2;
   grid-row-start: 5;
   grid-row-end: 7;
+  min-width: 100px
 }
 .cuartosI4 {
   background-color: rgba(255, 255, 255, 0.8);
@@ -74,6 +76,7 @@ th, td {
   grid-column: 2;
   grid-row-start: 7;
   grid-row-end: 9;
+  min-width: 100px
 }
 .semiI1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -84,6 +87,7 @@ th, td {
     grid-column: 3;
     grid-row-start: 1;
     grid-row-end: 5;
+    min-width: 100px;
 }
 .semiI2 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -94,6 +98,7 @@ th, td {
     grid-column: 3;
     grid-row-start: 5;
     grid-row-end: 9;
+    min-width: 100px;
 }
 .octavosD {
     background-color: rgba(255, 255, 255, 0.8);
@@ -102,7 +107,7 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 3;
-
+    min-width: 100px;
 }
 .cuartosD1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -113,6 +118,7 @@ th, td {
     grid-row-start: 1;
     grid-column: 2;
     grid-row-end: 3;
+    min-width: 100px;
 }
 .cuartosD2 {
   background-color: rgba(255, 255, 255, 0.8);
@@ -123,6 +129,7 @@ th, td {
   grid-column: 2;
   grid-row-start: 3;
   grid-row-end: 5;
+  min-width: 100px;
 }
 .cuartosD3 {
   background-color: rgba(255, 255, 255, 0.8);
@@ -133,6 +140,7 @@ th, td {
   grid-column: 2;
   grid-row-start: 5;
   grid-row-end: 7;
+  min-width: 100px;
 }
 .cuartosD4 {
   background-color: rgba(255, 255, 255, 0.8);
@@ -143,6 +151,7 @@ th, td {
   grid-column: 2;
   grid-row-start: 7;
   grid-row-end: 9;
+  min-width: 100px;
 }
 .semiD1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -153,6 +162,7 @@ th, td {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 5;
+    min-width: 100px;
 }
 .semiD2 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -163,6 +173,7 @@ th, td {
     grid-column: 1;
     grid-row-start: 5;
     grid-row-end: 9;
+    min-width: 100px;
 }
 .campeon {
     background-color: rgba(255, 255, 255, 0.8);
@@ -171,14 +182,15 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .final1 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .final2 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -187,6 +199,7 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .tercero1 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -195,6 +208,7 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .tercero2 {
     background-color: rgba(255, 255, 255, 0.8);
@@ -203,13 +217,14 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .campeontxt {
-    background-color: #2196F3;
     padding: 20px;
     font-size: 20px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
 .finaltxt {
     background-color: rgba(0, 0, 0, 0)
@@ -217,12 +232,13 @@ th, td {
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 100px;
 }
 .tercerotxt {
-    background-color: #2196F3;
     padding: 20px;
     font-size: 10px;
     text-align: center;
     grid-column: 2;
+    min-width: 50;
 }
  
