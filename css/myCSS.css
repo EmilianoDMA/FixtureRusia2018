@@ -205,7 +205,6 @@ th, td {
     grid-column: 2;
 }
 .campeontxt {
-    background-color: #2196F3;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -219,7 +218,6 @@ th, td {
     grid-column: 2;
 }
 .tercerotxt {
-    background-color: #2196F3;
     padding: 20px;
     font-size: 10px;
     text-align: center;
