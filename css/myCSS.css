@@ -17,12 +17,12 @@ th, td {
 .grid-medio {
     text-align: center;
     font-size: 14px;
-    padding: 10px;
+    min-width: 100px;
 }
 .grid-medio > div {
     text-align: center;
     font-size: 14px;
-    padding: 10px;
+    min-height: 50px;
 }
 .grid-container {
     display: grid;
