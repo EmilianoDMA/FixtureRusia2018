@@ -15,10 +15,10 @@
 	<script src="../js/main.js"></script>
 
 </head>
-<body>
+<body style="background-image: url('../static/img/estadio.jpg'); background-size: cover;">
 
 <div class="container-fluid">
-  <h1>Arma tu Fixture!</h1>
+  <div class="titulo"><h1>Fixture Rusia 2018</h1></div>
   <div class="row">
     <div class="container-fluid">
   		<div class="row" id="grupos">
@@ -28,53 +28,53 @@
 </div>
 <div class="grid-container"> <!--Este div con la clase se saca con js para la responsividad-->
 	<div data-key="Left" class="grid-container">
-	            <div class="octavosI" data-grupo="A1"><br></div>
-	            <div class="octavosI" data-grupo="B2"><br></div>
-	            <div class="octavosI" data-grupo="C1"><br></div>
-	            <div class="octavosI" data-grupo="D2"><br></div>
-	            <div class="octavosI" data-grupo="E1"><br></div>
-	            <div class="octavosI" data-grupo="F2"><br></div>
-	            <div class="octavosI" data-grupo="G1"><br></div>
-	            <div class="octavosI" data-grupo="H2"><br></div>
+			<div class="octavosI" data-grupo="A1" data-next="1" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="B2" data-next="1" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="C1" data-next="2" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="D2" data-next="2" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="E1" data-next="3" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="F2" data-next="3" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="G1" data-next="4" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="H2" data-next="4" onclick="select(this)"><br></div>
 
-	            <div class="cuartosI1"><input data-next="g1-3" type="radio" class="g1-1" name="partidog1-3" value="" class="nameg1-1">IZQUIERDA 2.1.1 <br></div>
-	            <div class="cuartosI2"><input data-next="g1-3" type="radio" class="g1-2" name="partidog1-3" value="" class="nameg1-2">IZQUIERDA 2.1.2 <br></div>
-	            <div class="cuartosI3"><input data-next="g2-3" type="radio" class="g2-1" name="partidog2-3" value="" class="nameg2-1">IZQUIERDA 2.2.3 <br></div>
-	            <div class="cuartosI4"><input data-next="g2-3" type="radio" class="g2-2" name="partidog2-3" value="" class="nameg2-2">IZQUIERDA 2.2.4 <br></div>
+			<div class="cuartosI1" data-cuar="1" data-next="1" onclick="select1(this)"> <br></div>
+			<div class="cuartosI2" data-cuar="2" data-next="1" onclick="select1(this)"><br></div>
+			<div class="cuartosI3" data-cuar="3" data-next="2" onclick="select1(this)"><br></div>
+			<div class="cuartosI4" data-cuar="4" data-next="2" onclick="select1(this)"><br></div>
 
-	            <div class="semiI1"><input data-next="final1" type="radio" class="g1-3" name="semi1" value="" class="nameg1-3">IZQUIERDA 3.1 <br></div>
-	            <div class="semiI2"><input data-next="final1" type="radio" class="g2-3" name="semi1" value="" class="nameg2-3">IZQUIERDA 3.2 <br></div>
+			<div class="semiI1" data-semi="1" data-next="1"><br></div>
+			<div class="semiI2" data-semi="2" data-next="1"><br></div>
 	</div>
 
-	<div data-key="Final" class="grid-container">
-	    <div class="campeontxt">CAMPEON</div>
+	<div data-key="Final" class="grid-medio">
+	    <div class="campeontxt"><strong>CAMPEON</strong></div>
 	    <div class="campeon" class="">CAMPEON</div>
-	    <div class="finaltxt">FINAL</div>
+	    <div class="finaltxt"><strong>FINAL</strong></div>
 	    <div class="final1">FINAL </div>
 	    <div class="final2">FINAL </div>
-	    <div class="tercerotxt">3er PUESTO</div>
+	    <div class="tercerotxt"><strong>3er PUESTO</strong></div>
 	    <div class="tercero1">TERCERO 1 </div>
 	    <div class="tercero2">TERCERO 2 </div>
 	</div>
 
 	<div data-key="Rigth" class="grid-container">
 
-	        <div class="semiD1">DERECHA 3.1</div>
-	        <div class="semiD2">DERECHA 3.2</div>
+	        <div class="semiD1" data-semi="3" data-next="1"></div>
+	        <div class="semiD2" data-semi="4" data-next="1"></div>
 
-	        <div class="cuartosD1">DERECHA 2.1.1</div>
-	        <div class="cuartosD2">DERECHA 2.1.2</div>
-	        <div class="cuartosD3">DERECHA 2.2.3</div>
-	        <div class="cuartosD4">DERECHA 2.2.4</div>
+	        <div class="cuartosD1" data-cuar="5" data-next="3" onclick="select1(this)"></div>
+	        <div class="cuartosD2" data-cuar="6" data-next="3" onclick="select1(this)"></div>
+	        <div class="cuartosD3" data-cuar="7" data-next="4" onclick="select1(this)"></div>
+	        <div class="cuartosD4" data-cuar="8" data-next="5" onclick="select1(this)"></div>
 
-	        <div class="octavosD" data-grupo="B1"><br></div>
-	        <div class="octavosD" data-grupo="A2"><br></div>
-	        <div class="octavosD" data-grupo="D1"><br></div>
-	        <div class="octavosD" data-grupo="C2"><br></div>
-	        <div class="octavosD" data-grupo="F1"><br></div>
-	        <div class="octavosD" data-grupo="E2"><br></div>
-	        <div class="octavosD" data-grupo="H1"><br></div>
-	        <div class="octavosD" data-grupo="G2"><br></div>
+	        <div class="octavosD" data-grupo="B1" data-next="5" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="A2" data-next="5" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="D1" data-next="6" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="C2" data-next="6" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="F1" data-next="7" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="E2" data-next="7" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="H1" data-next="8" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="G2" data-next="8" onclick="select(this)"><br></div>
 
 	</div>
 	</div>

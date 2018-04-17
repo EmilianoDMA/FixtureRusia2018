@@ -5,25 +5,21 @@ var app = (function(scope = {}) {
         return null;
     }
 
-    var td;
     var run = (datos) => {
-        //fixture = fixtureFactory(datos);
         datos.grupos.forEach(g => {
             var grupo = app.templates.grupoTemplate(g);
             var $grupo = $(grupo);
             $("td", $grupo).click(function() {
-                console.log("click en grupo", g.letra, g.cont_ganadores);
-                console.log($(this));
                 if ((g.cont_ganadores <= 2) && ($(this).attr('id') != 'seleccionado')){
+                    //if (g.cont_ganadores == 1){
+                    //    g.llave1.add_equipo1();
+                    //}
                     $(this).attr("style", "background-color: #f42242");
                     $(this).attr("id", "seleccionado");
-                    //console.log($(this).attr('id'));
-                    var nombre = $(this).text();
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
                     $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());
-                    var bandera = "../static/img/banderas/" + $(this).attr('abbr') +".png";
-                    //console.log(bandera);
-                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); background-position: calc(100% - 10px) center; background-size: 100%;");
+                    var bandera = "../static/img/fondos/" + $(this).attr('abbr') +".jpg";
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%; opacity: 0.9; filter: alpha(opacity=90);");
                     g.cont_ganadores = g.cont_ganadores + 1;
                 }
             });
