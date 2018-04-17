@@ -2,6 +2,7 @@ table, th, td {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-collapse: collapse;
+    background-color: #ffffff;
 }
 th, td {
 	font-size: 14px;
@@ -16,12 +17,12 @@ th, td {
 .grid-medio {
     text-align: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
 }
 .grid-medio > div {
     text-align: center;
     font-size: 14px;
-    padding: 20px;
+    padding: 10px;
 }
 .grid-container {
     display: grid;
@@ -235,19 +236,19 @@ th, td {
     min-width: 50;
 }
 .campeontxt {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     grid-column: 2;
     min-width: 50;
 }
 .finaltxt {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     grid-column: 2;
     min-width: 100px;
 }
 .tercerotxt {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     grid-column: 2;
     min-width: 50;
