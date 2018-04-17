@@ -28,53 +28,53 @@
 </div>
 <div class="grid-container"> <!--Este div con la clase se saca con js para la responsividad-->
 	<div data-key="Left" class="grid-container">
-			<div class="octavosI" data-grupo="A1" data-next="1" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="B2" data-next="1" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="C1" data-next="2" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="D2" data-next="2" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="E1" data-next="3" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="F2" data-next="3" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="G1" data-next="4" onclick="select(this)"><br></div>
-			<div class="octavosI" data-grupo="H2" data-next="4" onclick="select(this)"><br></div>
+			<div class="octavosI" data-grupo="A1" data-next="1" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="B2" data-next="1" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="C1" data-next="2" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="D2" data-next="2" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="E1" data-next="3" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="F2" data-next="3" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="G1" data-next="4" onclick="selectOct(this)"><br></div>
+			<div class="octavosI" data-grupo="H2" data-next="4" onclick="selectOct(this)"><br></div>
 
-			<div class="cuartosI1" data-cuar="1" data-next="1" onclick="select1(this)"> <br></div>
-			<div class="cuartosI2" data-cuar="2" data-next="1" onclick="select1(this)"><br></div>
-			<div class="cuartosI3" data-cuar="3" data-next="2" onclick="select1(this)"><br></div>
-			<div class="cuartosI4" data-cuar="4" data-next="2" onclick="select1(this)"><br></div>
+			<div class="cuartosI1" data-cuar="1" data-next="1" onclick="selectCuar(this)"> <br></div>
+			<div class="cuartosI2" data-cuar="2" data-next="1" onclick="selectCuar(this)"><br></div>
+			<div class="cuartosI3" data-cuar="3" data-next="2" onclick="selectCuar(this)"><br></div>
+			<div class="cuartosI4" data-cuar="4" data-next="2" onclick="selectCuar(this)"><br></div>
 
-			<div class="semiI1" data-semi="1" data-next="1"><br></div>
-			<div class="semiI2" data-semi="2" data-next="1"><br></div>
+			<div class="semiI1" data-semi="1" data-next="1" id="semiI1" onclick="selectSemiI(this)"><br></div>
+			<div class="semiI2" data-semi="2" data-next="1" id="semiI2" onclick="selectSemiI(this)"><br></div>
 	</div>
 
 	<div data-key="Final" class="grid-container">
 	    <div class="campeontxt">CAMPEON</div>
-	    <div class="campeon" class="">CAMPEON</div>
+	    <div class="campeon" data-campeon="1">CAMPEON</div>
 	    <div class="finaltxt">FINAL</div>
-	    <div class="final1">FINAL </div>
-	    <div class="final2">FINAL </div>
+	    <div class="final1" data-final="1">FINAL </div>
+	    <div class="final2" data-final="2">FINAL </div>
 	    <div class="tercerotxt">3er PUESTO</div>
-	    <div class="tercero1">TERCERO 1 </div>
-	    <div class="tercero2">TERCERO 2 </div>
+	    <div class="tercero1" data-tercero="1">TERCERO 1 </div>
+	    <div class="tercero2" data-tercero="2">TERCERO 2 </div>
 	</div>
 
 	<div data-key="Rigth" class="grid-container">
 
-	        <div class="semiD1" data-semi="3" data-next="1"></div>
-	        <div class="semiD2" data-semi="4" data-next="1"></div>
+	        <div class="semiD1" data-semi="3" data-next="2" id="semiD1" onclick="selectSemiD(this)"></div>
+	        <div class="semiD2" data-semi="4" data-next="2" id="semiD2" onclick="selectSemiD(this)"></div>
 
-	        <div class="cuartosD1" data-cuar="5" data-next="3" onclick="select1(this)"></div>
-	        <div class="cuartosD2" data-cuar="6" data-next="3" onclick="select1(this)"></div>
-	        <div class="cuartosD3" data-cuar="7" data-next="4" onclick="select1(this)"></div>
-	        <div class="cuartosD4" data-cuar="8" data-next="5" onclick="select1(this)"></div>
+	        <div class="cuartosD1" data-cuar="5" data-next="3" onclick="selectCuar(this)"></div>
+	        <div class="cuartosD2" data-cuar="6" data-next="3" onclick="selectCuar(this)"></div>
+	        <div class="cuartosD3" data-cuar="7" data-next="4" onclick="selectCuar(this)"></div>
+	        <div class="cuartosD4" data-cuar="8" data-next="5" onclick="selectCuar(this)"></div>
 
-	        <div class="octavosD" data-grupo="B1" data-next="5" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="A2" data-next="5" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="D1" data-next="6" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="C2" data-next="6" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="F1" data-next="7" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="E2" data-next="7" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="H1" data-next="8" onclick="select(this)"><br></div>
-	        <div class="octavosD" data-grupo="G2" data-next="8" onclick="select(this)"><br></div>
+	        <div class="octavosD" data-grupo="B1" data-next="5" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="A2" data-next="5" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="D1" data-next="6" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="C2" data-next="6" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="F1" data-next="7" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="E2" data-next="7" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="H1" data-next="8" onclick="selectOct(this)"><br></div>
+	        <div class="octavosD" data-grupo="G2" data-next="8" onclick="selectOct(this)"><br></div>
 
 	</div>
 	</div>

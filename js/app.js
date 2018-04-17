@@ -19,7 +19,7 @@ var app = (function(scope = {}) {
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
                     $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());
                     var bandera = "../static/img/fondos/" + $(this).attr('abbr') +".jpg";
-                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%; opacity: 0.9; filter: alpha(opacity=90);");
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
                     g.cont_ganadores = g.cont_ganadores + 1;
                 }
             });
