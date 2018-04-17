@@ -3,6 +3,8 @@ table, th, td {
     border-bottom: 1px solid black;
     border-collapse: collapse;
     background-color: #ffffff;
+    opacity: 0.8; 
+    filter: alpha(opacity=80);
 }
 th, td {
 	font-size: 14px;
