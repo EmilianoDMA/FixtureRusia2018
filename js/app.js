@@ -14,7 +14,7 @@ var app = (function(scope = {}) {
                     //if (g.cont_ganadores == 1){
                     //    g.llave1.add_equipo1();
                     //}
-                    $(this).attr("style", "background-color: #f42242");
+                    $(this).attr("style", "background-color: rgba(216, 6, 6, 0.9)");
                     $(this).attr("id", "seleccionado");
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
                     $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());

@@ -1,6 +1,6 @@
 function mOver(obj) {
     if (obj.id != "seleccionado") {
-    	obj.style.backgroundColor = "#6f8bf2";
+		obj.style.backgroundColor = "rgba(47, 85, 224, 0.9)";
     }
 }
 
@@ -14,7 +14,7 @@ function mOverBackground(obj) {
 
 function mOut(obj) {
 	if (obj.id != "seleccionado") {
-        obj.style.backgroundColor = "#ffffff";
+        obj.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
     } 
 }
 
