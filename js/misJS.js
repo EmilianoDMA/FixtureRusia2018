@@ -36,6 +36,26 @@ function selectOct(obj) {
 	$('[data-cuar='+numero+']').attr("abbr", $(obj).attr('abbr'));
     $('[data-cuar='+numero+']').attr("style", "background-image: url(\"" + escudo + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
 
+
+	//Borra casillero de semis si cambia el equipo seleccionado en octavos
+
+	if (numero == 1 || numero == 2){
+		$('[data-semi=' + 1 +']').html('');
+		$('[data-final=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').html('');
+	}else if (numero == 3 || numero == 4){
+		$('[data-semi=' + 2 +']').html('');
+		$('[data-final=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').html('');
+	}else if (numero == 5 || numero == 6){
+		$('[data-semi=' + 3 +']').html('');
+		$('[data-final=' + 2 +']').html('');
+		$('[data-tercero=' + 2 +']').html('');
+	}else {
+		$('[data-semi=' + 4 +']').html('');
+		$('[data-final=' + 2 +']').html('');
+		$('[data-tercero=' + 2 +']').html('');
+	}
 }
 
 function selectCuar(obj) {
@@ -48,22 +68,35 @@ function selectCuar(obj) {
 	$('[data-semi='+numero+']').attr("abbr", $(obj).attr('abbr'));
 	$('[data-semi='+numero+']').attr("style", "background-image: url(\"" + jugador + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
 
+
+	//Borra casillero de la final si cambia el equipo seleccionado en cuartos
+
+	if (numero == 1 || numero == 2){
+		$('[data-final=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').html('');
+	}else {
+		$('[data-tercero=' + 2 +']').html('');
+	}
 }
 
 
 function selectSemiI(obj) {
 	div = obj;
 	if (obj.id == 'semiI1'){
-		var numero = $(obj).attr('data-next');
-		$('[data-final='+numero+']').html($(obj).html());
-		var numero = $("#semiI2").attr('data-next');	
-		$('[data-tercero='+numero+']').html($("#semiI2").html());
+		if ($("#semiI2").html() != ''){
+			var numero = $(obj).attr('data-next');
+			$('[data-final='+numero+']').html($(obj).html());
+			var numero = $("#semiI2").attr('data-next');	
+			$('[data-tercero='+numero+']').html($("#semiI2").html());
+		}
 	}	
 	else {
-		var numero = $(obj).attr('data-next');
-		$('[data-final='+numero+']').html($(obj).html());
-		var numero = $("#semiI1").attr('data-next');	
-		$('[data-tercero='+numero+']').html($("#semiI1").html());
+		if ($("#semiI2").html() != ''){
+			var numero = $(obj).attr('data-next');
+			$('[data-final='+numero+']').html($(obj).html());
+			var numero = $("#semiI1").attr('data-next');	
+			$('[data-tercero='+numero+']').html($("#semiI1").html());
+		}
 	}	
 }
 
