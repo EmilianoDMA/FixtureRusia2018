@@ -89,6 +89,8 @@ function selectCuar(obj) {
 		$('[data-tercero=' + 1 +']').html('');
 		$('[data-tercero=' + 1 +']').attr("style","");
 	}else {
+		$('[data-final=' + 2 +']').html('');
+		$('[data-final=' + 2 +']').attr("style","");
 		$('[data-tercero=' + 2 +']').html('');
 		$('[data-tercero=' + 2 +']').attr("style","");
 	}
