@@ -10,6 +10,10 @@ th, td {
     text-align: left;    
 }
 
+span {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .titulo {
     text-align: center;
     color: #ffffff;
@@ -27,6 +31,7 @@ th, td {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    background-position: center;
     grid-gap: 10px;
     align-content: center;    
 }
