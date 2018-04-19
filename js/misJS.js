@@ -41,20 +41,32 @@ function selectOct(obj) {
 
 	if (numero == 1 || numero == 2){
 		$('[data-semi=' + 1 +']').html('');
+		$('[data-semi=' + 1 +']').attr("style","");
 		$('[data-final=' + 1 +']').html('');
+		$('[data-final=' + 1 +']').attr("style","");
 		$('[data-tercero=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').attr("style","");
 	}else if (numero == 3 || numero == 4){
 		$('[data-semi=' + 2 +']').html('');
+		$('[data-semi=' + 2 +']').attr("style","");
 		$('[data-final=' + 1 +']').html('');
+		$('[data-final=' + 1 +']').attr("style","");
 		$('[data-tercero=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').attr("style","");
 	}else if (numero == 5 || numero == 6){
 		$('[data-semi=' + 3 +']').html('');
+		$('[data-semi=' + 3 +']').attr("style","");
 		$('[data-final=' + 2 +']').html('');
+		$('[data-final=' + 2 +']').attr("style","");
 		$('[data-tercero=' + 2 +']').html('');
+		$('[data-tercero=' + 2 +']').attr("style","");
 	}else {
 		$('[data-semi=' + 4 +']').html('');
+		$('[data-semi=' + 4 +']').attr("style","");
 		$('[data-final=' + 2 +']').html('');
+		$('[data-final=' + 2 +']').attr("style","");
 		$('[data-tercero=' + 2 +']').html('');
+		$('[data-tercero=' + 2 +']').attr("style","");
 	}
 }
 
@@ -73,9 +85,12 @@ function selectCuar(obj) {
 
 	if (numero == 1 || numero == 2){
 		$('[data-final=' + 1 +']').html('');
+		$('[data-final=' + 1 +']').attr("style","");
 		$('[data-tercero=' + 1 +']').html('');
+		$('[data-tercero=' + 1 +']').attr("style","");
 	}else {
 		$('[data-tercero=' + 2 +']').html('');
+		$('[data-tercero=' + 2 +']').attr("style","");
 	}
 }
 
@@ -100,7 +115,7 @@ function selectSemiI(obj) {
 	}	
 }
 
-
+gi
 function selectSemiD(obj) {
 	div = obj;
 	if (obj.id == 'semiD1'){
