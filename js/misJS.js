@@ -32,8 +32,10 @@ function selectOct(obj) {
 	var numero = $(obj).attr('data-next');
 	console.log($(obj).html());
 	var escudo = "../static/img/escudos/" + $(obj).attr('abbr') +".jpg";
+	//var fondo = "../static/img/fondos/" + $(obj).attr('abbr') +".jpg";
 	$('[data-cuar='+numero+']').html($(obj).html());
 	$('[data-cuar='+numero+']').attr("abbr", $(obj).attr('abbr'));
+	//$(obj).attr("style", "background-image: url(\"" + fondo + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
     $('[data-cuar='+numero+']').attr("style", "background-image: url(\"" + escudo + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
 
 

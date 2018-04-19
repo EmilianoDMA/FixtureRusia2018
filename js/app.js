@@ -16,7 +16,7 @@ var app = (function(scope = {}) {
                     //}
                     $(this).attr("style", "background-color: rgba(216, 6, 6, 0.9)");
                     $(this).attr("id", "seleccionado");
-                    $('[data-grupo='+g.letra+g.cont_ganadores+']').html($(this).html())
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').html("<span><strong>" + $(this).html() + "</strong></span>");
                     $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());
                     var bandera = "../static/img/fondos/" + $(this).attr('abbr') +".jpg";
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
