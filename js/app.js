@@ -20,6 +20,7 @@ var app = (function(scope = {}) {
                     $(this).html('<strong>' + g.cont_ganadores + '</strong>' + $(this).html());
                     var bandera = "../static/img/fondos/" + $(this).attr('abbr') +".jpg";
                     $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("style", "background-image: url(\"" + bandera + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
+                    $('[data-grupo='+g.letra+g.cont_ganadores+']').attr("abbr", $(this).attr('abbr'));
                     g.cont_ganadores = g.cont_ganadores + 1;
                 }
             });

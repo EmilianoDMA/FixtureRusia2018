@@ -31,7 +31,11 @@ function selectOct(obj) {
 	obj.id = "seleccionado";
 	var numero = $(obj).attr('data-next');
 	console.log($(obj).html());
+	var escudo = "../static/img/escudos/" + $(obj).attr('abbr') +".jpg";
 	$('[data-cuar='+numero+']').html($(obj).html());
+	$('[data-cuar='+numero+']').attr("abbr", $(obj).attr('abbr'));
+    $('[data-cuar='+numero+']').attr("style", "background-image: url(\"" + escudo + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
+
 }
 
 function selectCuar(obj) {
@@ -39,7 +43,11 @@ function selectCuar(obj) {
 	obj.id = "seleccionado";
 	var numero = $(obj).attr('data-next');
 	console.log($(obj).html());
+	var jugador = "../static/img/jugadores/" + $(obj).attr('abbr') +".jpg";
 	$('[data-semi='+numero+']').html($(obj).html());
+	$('[data-semi='+numero+']').attr("abbr", $(obj).attr('abbr'));
+	$('[data-semi='+numero+']').attr("style", "background-image: url(\"" + jugador + "\"); border: hidden; background-repeat: no-repeat; background-position: center center; background-size: 100%;");
+
 }
 
 
