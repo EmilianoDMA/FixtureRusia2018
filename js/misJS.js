@@ -117,7 +117,7 @@ function selectSemiI(obj) {
 	}	
 }
 
-gi
+div
 function selectSemiD(obj) {
 	div = obj;
 	if (obj.id == 'semiD1'){
