@@ -194,9 +194,9 @@ function funcion_canvas(campeon){
 	var ctx=c.getContext("2d");
 	ctx.font="60px Arial";
 	ctx.fillStyle = 'white';
-	ctx.textAlign = "center";  
 	var nombre = campeon.innerText;
-	ctx.fillText(nombre.toUpperCase()+ " CAMPEON DEL MUNDO!!", 600, 200);
+	ctx.textAlign = "center"; 
+	ctx.fillText(nombre.toUpperCase()+ " CAMPEON DEL MUNDO", window.innerWidth/2, window.innerHeight/2);
 }
 
 function pageScroll() {
@@ -247,9 +247,9 @@ function loop() {
  }
 
  // clear canvas
- context.fillStyle = "rgba(0, 0, 0, 0.05)";
+ context.fillStyle = "rgba(0, 0, 0, 0.01)";
+ fondoC = new Image();
  context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-
  var existingRockets = [];
 
  for (var i = 0; i < rockets.length; i++) {
