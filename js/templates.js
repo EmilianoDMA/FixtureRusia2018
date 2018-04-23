@@ -12,23 +12,6 @@
         </div>`;
     }
 
-    var partidoTemplate = function(partido) {
-        return `<tr>
-            <td>${partido.estadio}</td>
-            <td>${partido.fecha}</td>
-            <td>${partido.local}</td>
-            <td><input data-equipo="${partido.local}" type="number" name="local" value="0" /></td>
-            <td>${partido.vicitante}</td>
-            <td><input data-equipo="${partido.vicitante}" type="number" name="vicitante" value="0" /></td>
-        </tr>`;
-    }
-
-    var partidosTemplate = function(partidos) {
-        return `<table>
-            ${partidos.map(p => partidoTemplate(p)).join("")}
-            </table>`;
-    }
-
-    return Object.assign(scope, {grupoTemplate, partidosTemplate});
+    return Object.assign(scope, {grupoTemplate});
 
 })(app.templates || (app.templates = {}));

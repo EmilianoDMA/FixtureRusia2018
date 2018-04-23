@@ -1,10 +1,6 @@
 var app = (function(scope = {}) {
     var fixture;
 
-    var fixtureFactory = (datos) => {
-        return null;
-    }
-
     var run = (datos) => {
         datos.grupos.forEach(g => {
             var grupo = app.templates.grupoTemplate(g);
@@ -26,12 +22,6 @@ var app = (function(scope = {}) {
             });
             $grupo.appendTo($("#grupos"));
         });
-        
-        //var partidos = app.templates.partidosTemplate(datos.partidos);
-        
-        //var $partidos = $(partidos);
-        //$("input", $partidos).change(ganaunpartido);
-        //$partidos.appendTo($("#partidos"));
     }
 
     return Object.assign(scope, {run});
